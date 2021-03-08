@@ -259,4 +259,44 @@ countTriangle(16);
         return result;
     }
 
+'8. An efficient search'
+    function efficientSearch(array, item) {
+        let minIndex = 0;
+        let maxIndex = array.length - 1;
+        let currentIndex;
+        let currentElement;
 
+        while (minIndex <= maxIndex) {
+            currentIndex = Math.floor((minIndex + maxIndex) / 2);
+            currentElement = array[currentIndex];
+
+            if (currentElement < item) {
+                minIndex = currentIndex + 1;
+            }
+            else if (currentElement > item) {
+                maxIndex = currentIndex - 1;
+            }
+            else {
+                return currentIndex;
+            }
+        }
+        return -1;
+    }
+
+'9. Random element'
+    function findRandomElement(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+'10. What Am I?'
+    function isWhat(n) {
+        if (n < 2 || n % 1 !== 0) {
+            return false;
+        }
+        for (let i = 2; i < n; ++i) {
+            if (n % i === 0) return false;
+        }
+        return true;
+    }
+
+'11. Tower of Hanoi'
