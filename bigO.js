@@ -181,5 +181,35 @@ countTriangle(16);
 
 
 '1. What is the Big O for this?'
-    '1 - 0(1)'
-    '2 - '
+    '1 - O(1)'
+    '2 - O(n)'
+
+'2. Even or odd'
+    function isEven(value) {
+        if (value % 2 === 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    // O(1) - this will take the same time to complete no
+    // matter the input size
+
+'3. Are you here?'
+    function areYouHere(arr1, arr2) {
+        for (let i = 0; i < arr1.length; i++) {
+            const el1 = arr1[i];
+            for (let j = 0; j < arr2.length; j++) {
+                const el2 = arr2[j];
+                if (el1 === el2) return true;
+            }
+        }
+        return false;
+    }
+
+   // O(n) - the runtime is directly proportional 
+   // to the input size
+   
+'4. Doubler'
