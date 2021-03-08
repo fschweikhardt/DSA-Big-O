@@ -209,7 +209,25 @@ countTriangle(16);
         return false;
     }
 
-   // O(n) - the runtime is directly proportional 
-   // to the input size
+   // O(n^2) - the runtime is directly proportional 
+   // to the loop layers
    
 '4. Doubler'
+    function doubleArrayValues(array) {
+        for (let i = 0; i < array.length; i++) {
+            array[i] *= 2;
+        }
+        return array;
+    }
+
+    // O(n) - runtime is directly proportional 
+    // to the input size
+
+'5. Naive search'
+    function naiveSearch(array, item) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === item) {
+                return i;
+            }
+        }
+    }
