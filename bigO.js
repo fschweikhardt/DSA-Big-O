@@ -181,5 +181,5 @@ countTriangle(16);
 
 
 '1. What is the Big O for this?'
-    '1 - '
+    '1 - 0(1)'
     '2 - '
