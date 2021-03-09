@@ -232,6 +232,9 @@ countTriangle(16);
         }
     }
 
+    // O(n) - runtime is directly proportional 
+    // to the input size
+
 '6. Creating pairs'
     function createPairs(arr) {
         for (let i = 0; i < arr.length; i++) {
@@ -240,6 +243,9 @@ countTriangle(16);
             }
         }
     }
+
+    // O(n^2) - the runtime is directly proportional 
+   // to the loop layers
 
 '7. Compute the sequence'
     function compute(num) {
@@ -258,6 +264,9 @@ countTriangle(16);
         }
         return result;
     }
+
+    // O(n) - runtime is directly proportional 
+    // to the input size
 
 '8. An efficient search'
     function efficientSearch(array, item) {
