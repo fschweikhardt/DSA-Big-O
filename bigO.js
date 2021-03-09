@@ -209,7 +209,7 @@ countTriangle(16);
         return false;
     }
 
-   // O(n^2) - the runtime is directly proportional 
+   // O(n^k) - the runtime is directly proportional 
    // to the loop layers
    
 '4. Doubler'
@@ -244,7 +244,7 @@ countTriangle(16);
         }
     }
 
-    // O(n^2) - the runtime is directly proportional 
+    // O(n^k) - the runtime is directly proportional 
    // to the loop layers
 
 '7. Compute the sequence'
@@ -292,10 +292,16 @@ countTriangle(16);
         return -1;
     }
 
+    // looping through a single array. Less complex looping than
+    // O(n^k). Answer: O(log(n))
+
 '9. Random element'
     function findRandomElement(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
     }
+
+    // O(1) - this will take the same time to complete no
+    // matter the input size
 
 '10. What Am I?'
     function isWhat(n) {
@@ -307,5 +313,8 @@ countTriangle(16);
         }
         return true;
     }
+
+    // O(n) - runtime is directly proportional 
+    // to the input size
 
 '11. Tower of Hanoi'
