@@ -11,6 +11,9 @@ const sheep = num => {
 
 console.log(sheep(3))
 
+// Big O Type - O(n)
+// directly related to input value
+
 
 '2. Power Calculator'
 
@@ -29,6 +32,9 @@ console.log(calculator(10,3))
 console.log(calculator(3,3))
 console.log(calculator(10,-2))
 
+// Big O Type - O(2^n)
+// value is exponently increased by input
+
 
 '3. Reverse String'
 
@@ -41,6 +47,9 @@ const reverse = string => {
 }
 
 console.log(reverse('jim'))
+
+// Big O Type - O(n)
+// directly related to input value
 
 
 '4. nth Triangular Number'
@@ -58,6 +67,8 @@ const triangle = num => {
 
 console.log(triangle(5))
 
+// Big O Type - O(n)
+// directly related to input value
 
 '5. String Splitter'
 
@@ -76,5 +87,8 @@ const splitter = (string, seperator) => {
 }
 
 console.log(splitter('02/02/3030', '/'))
+
+// Big O Type - O(log(n))
+// will increase slightly with inputs
 
 
